@@ -63,7 +63,8 @@ export default function Home() {
             <img 
               src={heroImage} 
               alt="Jackie D'Anna" 
-              className="w-72 md:w-96 h-auto object-contain rounded-lg shadow-2xl"
+              style={{ width: "735px", height: "897px" }}
+              className="object-cover rounded-lg shadow-2xl"
             />
           </motion.div>
 
