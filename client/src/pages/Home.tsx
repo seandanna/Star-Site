@@ -32,9 +32,9 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
-    <div className="bg-background text-foreground overflow-x-hidden">
-      {/* Navigation Header */}
-      <header className="w-full bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 py-4 md:py-6 sticky top-0 z-40">
+    <div className="bg-background text-foreground overflow-x-hidden pt-20 md:pt-24">
+      {/* Navigation Header - Fixed */}
+      <header className="fixed top-0 left-0 right-0 w-full bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 py-4 md:py-6 z-50 border-b border-gray-200">
         <nav className="flex justify-center items-center">
           <div className="flex gap-4 md:gap-8 font-light tracking-wide text-xs md:text-sm items-center text-gray-900">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
@@ -49,7 +49,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-[calc(100vh-100px)] flex items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50">
         <div className="relative z-20 flex flex-col items-center justify-center w-full px-4">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
