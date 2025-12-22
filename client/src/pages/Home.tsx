@@ -34,11 +34,11 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground min-h-screen overflow-x-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 flex justify-between items-center mix-blend-difference text-white">
-        <a href="#" className="font-serif text-2xl tracking-widest uppercase">J.D.</a>
-        <div className="hidden md:flex gap-8 font-light tracking-wide text-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 flex justify-center items-center mix-blend-difference text-white">
+        <div className="flex gap-8 font-light tracking-wide text-sm items-center">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#gallery" className="hover:text-primary transition-colors">Gallery</a>
+          <a href="#" className="font-serif text-2xl tracking-widest uppercase px-4">J.D.</a>
           <Link href="/resume">
             <a className="hover:text-primary transition-colors">Resume</a>
           </Link>
