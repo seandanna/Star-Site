@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Instagram, Twitter, Mail, Film, Theater, Clapperboard, Award } from "lucide-react";
 import { Link } from "wouter";
+import ResumeModal from "../components/ResumeModal";
 
 // Import assets
 import heroImage from "@assets/SNAPS_X_JACKIE-477_1766444720628.jpg";
@@ -28,6 +29,7 @@ const staggerContainer = {
 
 
 export default function Home() {
+  const [showResume, setShowResume] = useState(false);
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
@@ -40,9 +42,12 @@ export default function Home() {
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#gallery" className="hover:text-primary transition-colors">Gallery</a>
             <a href="#" className="font-serif text-xl md:text-2xl tracking-widest uppercase px-2 md:px-4">J.D.</a>
-            <Link href="/resume">
-              <a className="hover:text-primary transition-colors">Resume</a>
-            </Link>
+            <button
+              onClick={() => setShowResume(true)}
+              className="hover:text-primary transition-colors"
+            >
+              Resume
+            </button>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
         </nav>
@@ -202,6 +207,9 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+
+      {/* Resume Modal */}
+      <ResumeModal isOpen={showResume} onClose={() => setShowResume(false)} />
     </div>
   );
 }
