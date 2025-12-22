@@ -26,13 +26,6 @@ const staggerContainer = {
   }
 };
 
-const works = [
-  { year: "2024", title: "The Silent Echo", role: "Lead", type: "Feature Film" },
-  { year: "2023", title: "Midnight in Paris", role: "Supporting", type: "Theater" },
-  { year: "2023", title: "Glass Houses", role: "Lead", type: "TV Series" },
-  { year: "2022", title: "Waiting for Godot", role: "Estragon", type: "Theater" },
-  { year: "2021", title: "Last Summer", role: "Lead", type: "Short Film" },
-];
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -46,7 +39,9 @@ export default function Home() {
         <div className="hidden md:flex gap-8 font-light tracking-wide text-sm">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#gallery" className="hover:text-primary transition-colors">Gallery</a>
-          <a href="#filmography" className="hover:text-primary transition-colors">Filmography</a>
+          <Link href="/resume">
+            <a className="hover:text-primary transition-colors">Resume</a>
+          </Link>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </div>
       </nav>
@@ -176,37 +171,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Filmography */}
-      <section id="filmography" className="py-24 px-6 max-w-4xl mx-auto">
-        <motion.h2 
-          {...fadeIn}
-          className="font-serif text-4xl md:text-5xl mb-12 text-center"
-        >
-          Selected Works
-        </motion.h2>
-
-        <div className="space-y-8">
-          {works.map((work, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="flex items-center justify-between border-b border-white/10 pb-6 group hover:border-primary/50 transition-colors"
-            >
-              <div className="space-y-1">
-                <h3 className="font-serif text-2xl group-hover:text-primary transition-colors">{work.title}</h3>
-                <p className="text-sm text-muted-foreground">{work.role}</p>
-              </div>
-              <div className="text-right">
-                <span className="block font-mono text-sm text-muted-foreground">{work.year}</span>
-                <span className="block text-xs uppercase tracking-wider mt-1 opacity-50">{work.type}</span>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
 
       {/* Contact */}
       <section id="contact" className="py-32 bg-secondary text-center px-6">
