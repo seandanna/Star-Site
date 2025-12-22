@@ -48,11 +48,8 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Spacer Bar */}
-      <div className="h-16 md:h-20 bg-gradient-to-b from-amber-50 via-orange-50 to-orange-100"></div>
-
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-orange-50 via-amber-50 to-amber-50">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50">
         <div className="relative z-20 flex flex-col items-center justify-center w-full px-4">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
