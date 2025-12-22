@@ -34,11 +34,11 @@ export default function Home() {
   return (
     <div className="bg-background text-foreground min-h-screen overflow-x-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 flex justify-center items-center mix-blend-difference text-white">
-        <div className="flex gap-8 font-light tracking-wide text-sm items-center">
+      <nav className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex justify-center items-center mix-blend-difference text-white">
+        <div className="flex gap-4 md:gap-8 font-light tracking-wide text-xs md:text-sm items-center">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#gallery" className="hover:text-primary transition-colors">Gallery</a>
-          <a href="#" className="font-serif text-2xl tracking-widest uppercase px-4">J.D.</a>
+          <a href="#" className="font-serif text-xl md:text-2xl tracking-widest uppercase px-2 md:px-4">J.D.</a>
           <Link href="/resume">
             <a className="hover:text-primary transition-colors">Resume</a>
           </Link>
@@ -53,12 +53,12 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-12"
+            className="mb-8 md:mb-12 w-full max-w-xs md:max-w-none"
           >
             <img 
               src={heroImage} 
               alt="Jackie D'Anna" 
-              style={{ width: "735px", height: "897px" }}
+              style={{ width: "100%", maxWidth: "735px", height: "auto", aspectRatio: "735/897" }}
               className="object-cover rounded-lg shadow-2xl"
             />
           </motion.div>
@@ -67,7 +67,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="font-serif text-5xl md:text-7xl tracking-tighter text-white mb-4 text-center"
+            className="font-serif text-4xl sm:text-5xl md:text-7xl tracking-tighter text-white mb-3 md:mb-4 text-center"
           >
             JACKIE D'ANNA
           </motion.h1>
@@ -92,14 +92,14 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 md:py-32 px-6 md:px-12 bg-background relative z-10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section id="about" className="py-16 md:py-32 px-4 md:px-12 bg-background relative z-10">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <motion.div 
             {...fadeIn}
             className="space-y-6"
           >
-            <span className="text-primary tracking-widest text-sm uppercase font-semibold">About Me</span>
-            <h2 className="text-4xl md:text-5xl font-serif leading-tight">
+            <span className="text-primary tracking-widest text-xs md:text-sm uppercase font-semibold">About Me</span>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif leading-tight">
               Actor, Writer, and Producer
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed font-light">
@@ -132,14 +132,14 @@ export default function Home() {
       </section>
 
       {/* Gallery Grid */}
-      <section id="gallery" className="py-24 bg-secondary/20">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="gallery" className="py-16 md:py-24 bg-secondary/20">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
           <motion.div 
             {...fadeIn}
-            className="text-center mb-16"
+            className="text-center mb-12 md:mb-16"
           >
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">Selected Moments</h2>
-            <div className="w-24 h-[1px] bg-primary mx-auto" />
+            <h2 className="font-serif text-3xl md:text-5xl mb-4">Selected Moments</h2>
+            <div className="w-16 md:w-24 h-[1px] bg-primary mx-auto" />
           </motion.div>
 
           <motion.div 
@@ -147,7 +147,7 @@ export default function Home() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4"
           >
             <motion.div variants={fadeIn} className="group relative overflow-hidden aspect-[3/4]">
               <img src={setImage} alt="On Set" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -173,17 +173,17 @@ export default function Home() {
 
 
       {/* Contact */}
-      <section id="contact" className="py-32 bg-secondary text-center px-6">
+      <section id="contact" className="py-20 md:py-32 bg-secondary text-center px-4 md:px-6">
         <motion.div 
           {...fadeIn}
-          className="max-w-2xl mx-auto space-y-8"
+          className="max-w-2xl mx-auto space-y-6 md:space-y-8"
         >
-          <h2 className="font-serif text-4xl md:text-5xl">Let's Create Together</h2>
-          <p className="text-muted-foreground font-light leading-relaxed">
+          <h2 className="font-serif text-3xl md:text-5xl">Let's Create Together</h2>
+          <p className="text-muted-foreground font-light leading-relaxed text-sm md:text-base">
             For casting inquiries, collaborations, or press requests, please contact my representation or reach out directly below.
           </p>
           
-          <div className="flex justify-center gap-8 pt-8">
+          <div className="flex justify-center gap-6 md:gap-8 pt-6 md:pt-8">
             <a href="#" className="p-4 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-all hover:scale-110">
               <Mail size={24} />
             </a>
@@ -195,8 +195,8 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="pt-16 text-xs text-muted-foreground tracking-widest uppercase">
-            &copy; 2025 Elena Vore. All Rights Reserved.
+          <div className="pt-12 md:pt-16 text-xs text-muted-foreground tracking-widest uppercase">
+            &copy; 2025 Jackie D'Anna. All Rights Reserved.
           </div>
         </motion.div>
       </section>

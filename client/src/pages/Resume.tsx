@@ -22,27 +22,27 @@ export default function Resume() {
         </Link>
       </nav>
 
-      <div className="pt-24 pb-24 px-6 md:px-12">
+      <div className="pt-20 pb-16 md:pb-24 px-4 md:px-12">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <motion.div 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h1 className="font-serif text-5xl md:text-6xl mb-2">Resume</h1>
+            <h1 className="font-serif text-4xl md:text-6xl mb-2">Resume</h1>
             <div className="w-12 h-[1px] bg-primary" />
           </motion.div>
 
           {/* Physical Characteristics */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">Physical Characteristics</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">Physical Characteristics</h2>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
               <div>
-                <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">Height</p>
-                <p className="text-lg">5'8"</p>
+                <p className="text-muted-foreground text-xs md:text-sm uppercase tracking-widest mb-2">Height</p>
+                <p className="text-base md:text-lg">5'8"</p>
               </div>
               <div>
                 <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">Eye Color</p>
@@ -58,9 +58,9 @@ export default function Resume() {
           {/* Languages */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">Languages</h2>
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">Languages</h2>
             <div className="space-y-2">
               <p>English</p>
               <p>Spanish</p>
@@ -70,9 +70,9 @@ export default function Resume() {
           {/* In the Media */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">In the Media</h2>
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">In the Media</h2>
             <div className="space-y-4">
               <a 
                 href="https://voyagela.com/interview/meet-jacquelene-harvel-jazmine-harvel-harvel-productions-hollywood/"
@@ -98,9 +98,9 @@ export default function Resume() {
           {/* Film */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">Film</h2>
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">Film</h2>
             <div className="space-y-4">
               <div className="border-b border-white/10 pb-3">
                 <p className="font-medium">Da Club</p>
@@ -120,9 +120,9 @@ export default function Resume() {
           {/* Social Media / Sketch Comedy */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">Social Media / Sketch Comedy</h2>
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">Social Media / Sketch Comedy</h2>
             <div className="space-y-4">
               <div className="border-b border-white/10 pb-3">
                 <p className="font-medium">VidyPros "Hot Boyz"</p>
@@ -150,9 +150,9 @@ export default function Resume() {
           {/* Theater */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">Theater</h2>
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">Theater</h2>
             <div className="space-y-4">
               <div className="pb-3">
                 <p className="font-medium">Short + Sweet Hollywood "The Last Call Girl"</p>
@@ -164,9 +164,9 @@ export default function Resume() {
           {/* Training */}
           <motion.section 
             {...fadeIn}
-            className="mb-12"
+            className="mb-8 md:mb-12"
           >
-            <h2 className="font-serif text-2xl mb-6">Training</h2>
+            <h2 className="font-serif text-xl md:text-2xl mb-4 md:mb-6">Training</h2>
             <div className="space-y-3">
               <div className="text-sm text-muted-foreground">
                 <p className="mb-1"><span className="text-foreground font-medium">Ivana Chubbuck Studio</span> / Michael Monks</p>
