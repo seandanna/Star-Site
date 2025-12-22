@@ -103,19 +103,20 @@ export default function Home() {
             {...fadeIn}
             className="space-y-6"
           >
-            <span className="text-primary tracking-widest text-sm uppercase font-semibold">The Artist</span>
+            <span className="text-primary tracking-widest text-sm uppercase font-semibold">About Me</span>
             <h2 className="text-4xl md:text-5xl font-serif leading-tight">
-              Bringing complex characters to life through emotional depth and rigorous discipline.
+              Actor, Writer, and Producer
             </h2>
-            <p className="text-muted-foreground leading-relaxed font-light">
-              With a background in classical theater and a passion for contemporary cinema, Elena brings a unique blend of technical precision and raw emotional honesty to every role. Based in London and Los Angeles, she has worked with acclaimed directors and ensembles across both stage and screen.
-            </p>
-            <div className="flex gap-4 pt-4">
-              <Award className="text-primary w-8 h-8" />
-              <div>
-                <h4 className="font-serif text-lg">Best Actress</h4>
-                <p className="text-sm text-muted-foreground">Indie Film Festival 2023</p>
-              </div>
+            <div className="space-y-4 text-muted-foreground leading-relaxed font-light">
+              <p>
+                Jackie D'Anna is an actor, writer, and producer with a diverse background in performance. She starred in <em>The Last Call Girl</em> at the Lee Strasberg Theater for the Short+Sweet Festival Hollywood 2022, reaching the semi-finalist round. Alongside her twin sister, she co-created sketch comedy and films under "Harvel Twinz", exploring mixed-race identity and the actor's life.
+              </p>
+              <p>
+                With a screenwriting background from California State University, Northridge, Jackie wrote and starred in social media content for Vidy Pros. She has trained in the Chubbuck Technique and developed her improv skills at Leela Improv Theatre.
+              </p>
+              <p>
+                Outside of her career, Jackie's favorite role is being a wife and mom. She's a fitness enthusiast who loves staying active and singing for Jesus! Jackie is all about spreading joy and bringing smiles to everyone she meets.
+              </p>
             </div>
           </motion.div>
           <motion.div 
