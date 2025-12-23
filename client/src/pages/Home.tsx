@@ -74,7 +74,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="absolute inset-0 flex flex-col items-center justify-end pb-2 md:pb-4 rounded-lg translate-x-8 md:translate-x-12"
+              className="absolute inset-0 flex flex-col items-center justify-end pb-2 md:pb-4 rounded-lg translate-x-12 md:translate-x-16"
             >
               <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl tracking-tighter text-white drop-shadow-lg text-center">
                 JACKIE D'ANNA
