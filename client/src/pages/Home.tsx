@@ -74,14 +74,11 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
-              className="absolute inset-0 flex flex-col items-center justify-end pb-8 md:pb-12 rounded-lg"
+              className="absolute inset-0 flex flex-col items-center justify-end pb-16 md:pb-20 rounded-lg"
             >
               <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl tracking-tighter text-white drop-shadow-lg text-center">
                 JACKIE D'ANNA
               </h1>
-              <p className="font-sans text-xs md:text-sm tracking-[0.3em] uppercase text-white drop-shadow-md text-center mt-2">
-                Actress & Performer
-              </p>
             </motion.div>
           </motion.div>
         </div>
