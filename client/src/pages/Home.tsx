@@ -1,14 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, Instagram, Twitter, Mail, Film, Theater, Clapperboard, Award } from "lucide-react";
+import { ArrowDown, Instagram, Mail } from "lucide-react";
 import { Link } from "wouter";
 import ResumeModal from "../components/ResumeModal";
 
 // Import assets
 import heroImage from "@assets/SNAPS_X_JACKIE-477_1766444720628.jpg";
 import aboutImage from "@assets/SNAPS_X_JACKIE-628_1766517701393.jpg";
-import setImage from "@assets/generated_images/behind_the_scenes_film_set_moment.png";
-import carpetImage from "@assets/generated_images/red_carpet_elegant_fashion_shot.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -41,14 +39,15 @@ export default function Home() {
           <div className="flex gap-4 md:gap-8 font-light tracking-wide text-xs md:text-sm items-center text-gray-900">
             <a href="#" className="hover:text-primary transition-colors">Home</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="#gallery" className="hover:text-primary transition-colors">Gallery</a>
+            <Link href="/gallery">
+              <a className="hover:text-primary transition-colors">Gallery</a>
+            </Link>
             <button
               onClick={() => setShowResume(true)}
               className="hover:text-primary transition-colors"
             >
               Resume
             </button>
-            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </div>
         </nav>
       </header>
@@ -133,74 +132,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section id="gallery" className="py-16 md:py-24 bg-secondary/20">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <motion.div 
-            {...fadeIn}
-            className="text-center mb-12 md:mb-16"
-          >
-            <h2 className="font-serif text-3xl md:text-5xl mb-4">Selected Moments</h2>
-            <div className="w-16 md:w-24 h-[1px] bg-primary mx-auto" />
-          </motion.div>
-
-          <motion.div 
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4"
-          >
-            <motion.div variants={fadeIn} className="group relative overflow-hidden aspect-[3/4]">
-              <img src={setImage} alt="On Set" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="font-serif text-xl text-white italic">Behind the Scenes</span>
-              </div>
-            </motion.div>
-            <motion.div variants={fadeIn} className="group relative overflow-hidden aspect-[3/4] md:-mt-12">
-              <img src={heroImage} alt="Portrait" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="font-serif text-xl text-white italic">Editorial</span>
-              </div>
-            </motion.div>
-            <motion.div variants={fadeIn} className="group relative overflow-hidden aspect-[3/4]">
-              <img src={carpetImage} alt="Red Carpet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="font-serif text-xl text-white italic">Appearances</span>
-              </div>
-            </motion.div>
-          </motion.div>
+      {/* Footer with Social Icons */}
+      <section className="py-12 md:py-16 px-4 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 text-center">
+        <div className="flex justify-center gap-6 md:gap-8">
+          <a href="#" className="p-3 rounded-full hover:opacity-70 transition-opacity text-gray-900">
+            <Mail size={24} />
+          </a>
+          <a href="#" className="p-3 rounded-full hover:opacity-70 transition-opacity text-gray-900">
+            <Instagram size={24} />
+          </a>
         </div>
-      </section>
-
-
-      {/* Contact */}
-      <section id="contact" className="py-20 md:py-32 bg-secondary text-center px-4 md:px-6">
-        <motion.div 
-          {...fadeIn}
-          className="max-w-2xl mx-auto space-y-6 md:space-y-8"
-        >
-          <h2 className="font-serif text-3xl md:text-5xl">Let's Create Together</h2>
-          <p className="text-muted-foreground font-light leading-relaxed text-sm md:text-base">
-            For casting inquiries, collaborations, or press requests, please contact my representation or reach out directly below.
-          </p>
-          
-          <div className="flex justify-center gap-6 md:gap-8 pt-6 md:pt-8">
-            <a href="#" className="p-4 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-all hover:scale-110">
-              <Mail size={24} />
-            </a>
-            <a href="#" className="p-4 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-all hover:scale-110">
-              <Instagram size={24} />
-            </a>
-            <a href="#" className="p-4 rounded-full border border-white/10 hover:border-primary hover:text-primary transition-all hover:scale-110">
-              <Twitter size={24} />
-            </a>
-          </div>
-
-          <div className="pt-12 md:pt-16 text-xs text-muted-foreground tracking-widest uppercase">
-            &copy; 2025 Jackie D'Anna. All Rights Reserved.
-          </div>
-        </motion.div>
+        <div className="pt-8 text-xs text-gray-600 tracking-widest uppercase">
+          &copy; 2025 Jackie D'Anna. All Rights Reserved.
+        </div>
       </section>
 
       {/* Resume Modal */}
