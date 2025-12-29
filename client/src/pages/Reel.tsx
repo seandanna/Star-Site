@@ -14,13 +14,19 @@ const fadeIn = {
 const reels = [
   {
     title: "Comedic Reel",
-    url: "https://www.youtube.com/embed/F5wiIok27Oo",
-    description: "A showcase of comedic timing and character work."
+    url: "https://www.youtube.com/embed/F5wiIok27Oo"
   },
   {
     title: "Dramatic Reel",
-    url: "https://www.youtube.com/embed/iygC0deViBk",
-    description: "Exploring depth, vulnerability, and dramatic range."
+    url: "https://www.youtube.com/embed/iygC0deViBk"
+  },
+  {
+    title: "Commercial Reel",
+    url: "https://www.youtube.com/embed/Ay3TZy2wU0k"
+  },
+  {
+    title: "The Last Call Girl (Clip)",
+    url: "https://www.youtube.com/embed/jpG109J4V04"
   }
 ];
 
@@ -73,9 +79,8 @@ export default function Reel() {
                 className="space-y-6"
                 data-testid={`section-reel-${index}`}
               >
-                <div className="flex flex-col md:flex-row justify-between items-baseline mb-4">
+                <div className="mb-4">
                   <h2 className="font-serif text-2xl md:text-3xl text-gray-900">{reel.title}</h2>
-                  <p className="text-gray-600 text-sm md:text-base italic">{reel.description}</p>
                 </div>
                 <div className="relative aspect-video w-full overflow-hidden rounded-xl shadow-2xl bg-black">
                   <iframe
