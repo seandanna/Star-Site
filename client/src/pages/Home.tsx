@@ -6,7 +6,7 @@ import ResumeModal from "../components/ResumeModal";
 
 // Import assets
 import heroImage from "@assets/SNAPS_X_JACKIE-477_1766444720628.jpg";
-import aboutImage from "@assets/SNAPS_X_JACKIE-628_1766517701393.jpg";
+import aboutImage from "@assets/SNAPS_X_JACKIE-803_1767048309683.jpg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
