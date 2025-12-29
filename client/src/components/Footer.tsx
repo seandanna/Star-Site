@@ -1,13 +1,13 @@
 import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const imdbIcon = (
-  <div className="w-8 h-8 rounded-sm bg-[#F5C518] flex items-center justify-center p-0.5 shadow-sm">
-    <span className="text-black text-[10px] font-black leading-none tracking-tight">IMDb</span>
+  <div className="w-8 h-8 rounded-sm bg-gray-900 flex items-center justify-center p-0.5 shadow-sm">
+    <span className="text-white text-[10px] font-black leading-none tracking-tight">IMDb</span>
   </div>
 );
 
 const actorsAccessIcon = (
-  <div className="w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center p-0.5 overflow-hidden transition-all group-hover:bg-gray-900 group-hover:text-white">
+  <div className="w-8 h-8 rounded-full border border-gray-900 flex items-center justify-center p-0.5 overflow-hidden transition-all">
     <span className="text-[6px] font-black leading-[1.1] text-center uppercase tracking-tighter">
       Actors<br/>Access
     </span>
