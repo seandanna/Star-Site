@@ -44,7 +44,7 @@ const galleryImages = [
   { src: img4, alt: "Gentle Gaze", aspect: "aspect-[3/4]" },
   { src: img5, alt: "Serene Portrait", aspect: "aspect-[3/4]" },
   { src: img6, alt: "Playful Pose", aspect: "aspect-[3/4]" },
-  { src: img7, alt: "Intense Expression", aspect: "aspect-[3/4]" },
+  { src: img16, alt: "Editorial Close-up", aspect: "aspect-[3/4]" },
   { src: img8, alt: "Professional Power", aspect: "aspect-[3/4]" },
   { src: img9, alt: "Direct Connection", aspect: "aspect-[3/4]" },
   { src: img10, alt: "Carefree Spirit", aspect: "aspect-[3/4]" },
