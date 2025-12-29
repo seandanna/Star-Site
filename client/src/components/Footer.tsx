@@ -1,14 +1,16 @@
 import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const imdbIcon = (
-  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-    <path d="M23.23 0H.77C.345 0 0 .345 0 .77v22.46c0 .425.345.77.77.77h22.46c.425 0 .77-.345.77-.77V.77c0-.425-.345-.77-.77-.77zM4.12 18.25V5.75H6.2v12.5H4.12zm4.13 0V5.75h4.12c.57 0 1.03.46 1.03 1.03v10.44c0 .57-.46 1.03-1.03 1.03H8.25zm6.18 0V5.75h2.06l1.55 4.64 1.54-4.64h2.06v12.5h-2.06V9.35l-1.54 4.64h-1l-1.55-4.64v8.9h-2.06z"/>
+  <svg viewBox="0 0 448 512" fill="currentColor" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM21.3 229.2H21c.1-.1.2-.3.3-.4zM97 319V192h20.2v127H97zm44.8 0V192h21l13.6 57.1h.4l13.8-57.1h21v127h-18.7v-90.8h-.4l-14.7 90.8h-15.5l-14.7-90.8h-.4V319h-18.7zM261 192h30.2c19.3 0 30.2 11.5 30.2 29.8v67.5c0 18.2-10.9 29.7-30.2 29.7H261V192zm20.2 110.3h10c9.1 0 10.1-4.1 10.1-12.7v-67.5c0-8.6-1-12.7-10.1-12.7h-10v92.9zm101.4 16.7h-10c-9.1 0-10.1-4.1-10.1-12.7v-67.5c0-8.6 1-12.7 10.1-12.7h10c9.1 0 10.1 4.1 10.1 12.7v67.5c0 8.6-1 12.7-10.1 12.7zm-20.2-110.3h30.2c19.3 0 30.2 11.5 30.2 29.8v67.5c0 18.2-10.9 29.7-30.2 29.7h-30.2V192zm20.2 110.3h10c9.1 0 10.1-4.1 10.1-12.7v-67.5c0-8.6-1-12.7-10.1-12.7h-10v92.9z"/>
   </svg>
 );
 
 const actorsAccessIcon = (
-  <div className="w-6 h-6 rounded-full border-2 border-current flex items-center justify-center text-[8px] font-bold leading-none px-0.5 text-center">
-    ACTORS ACCESS
+  <div className="w-10 h-10 rounded-full border-2 border-current flex items-center justify-center p-1 overflow-hidden transition-all group-hover:bg-gray-900 group-hover:text-white">
+    <span className="text-[7px] font-black leading-[1.1] text-center uppercase tracking-tighter">
+      Actors<br/>Access
+    </span>
   </div>
 );
 
@@ -47,7 +49,7 @@ export default function Footer() {
           href="https://resumes.actorsaccess.com/jackiedanna" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="p-2 transition-transform hover:scale-110 text-gray-900"
+          className="group p-2 transition-transform hover:scale-110 text-gray-900"
           title="Actors Access"
         >
           {actorsAccessIcon}
