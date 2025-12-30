@@ -54,9 +54,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               {/* Middle - IMDb and Download */}
               <div className="flex flex-col items-start justify-start">
                 <div className="mb-4 md:mb-6">
-                  <div className="border-2 border-gray-900 px-2 sm:px-3 py-1 inline-block">
-                    <span className="text-gray-900 font-bold text-xs sm:text-sm tracking-widest">IMDb</span>
-                  </div>
+                  <a 
+                    href="https://www.imdb.com/name/nm10672151/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="border-2 border-gray-900 px-2 sm:px-3 py-1 inline-block hover:bg-gray-900 hover:text-white transition-all cursor-pointer"
+                  >
+                    <span className="font-bold text-xs sm:text-sm tracking-widest uppercase">IMDb</span>
+                  </a>
                 </div>
                 <a
                   href="#"
