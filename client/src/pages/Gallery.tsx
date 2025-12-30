@@ -52,9 +52,6 @@ const galleryImages = [
   { src: img5, alt: "Classic portrait" },
   { src: img6, alt: "White shirt editorial" },
   { src: img3, alt: "Joyful expression with trees" },
-  { src: img1, alt: "Candid portrait with trees" },
-  { src: img2, alt: "Thoughtful moment" },
-  { src: img4, alt: "Serene profile with blue sky" },
 ];
 
 export default function Gallery() {
