@@ -59,16 +59,16 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden">
+      <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-16 pb-12 overflow-hidden">
         {/* Decorative elements to mimic the style */}
         <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-amber-50/30 -z-10" />
         
         <div className="relative z-20 w-full max-w-5xl px-4 flex flex-col items-center">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-center mb-8"
+            className="text-center mb-6"
           >
             <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl tracking-[0.2em] text-gray-900 leading-none uppercase font-bold drop-shadow-sm whitespace-nowrap">
               JACKIE D'ANNA
