@@ -52,7 +52,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               </div>
 
               {/* Middle - IMDb and Download */}
-              <div className="flex flex-col items-start sm:items-center justify-start">
+              <div className="flex flex-col items-start justify-start">
                 <div className="mb-4 md:mb-6">
                   <div className="border-2 border-gray-900 px-2 sm:px-3 py-1 inline-block">
                     <span className="text-gray-900 font-bold text-xs sm:text-sm tracking-widest">IMDb</span>
