@@ -49,10 +49,10 @@ const galleryImages = [
   { src: img15, alt: "Playful energy" },
   { src: img9, alt: "Direct gaze" },
   { src: img13, alt: "Unbridled laughter" },
-  { src: img1, alt: "Candid portrait with trees" },
+  { src: img6, alt: "White shirt editorial" },
   { src: img2, alt: "Thoughtful moment" },
   { src: img3, alt: "Joyful expression with trees" },
-  { src: img6, alt: "White shirt editorial" },
+  { src: img1, alt: "Candid portrait with trees" },
   { src: img5, alt: "Classic portrait" },
   { src: img4, alt: "Serene profile with blue sky" },
 ];
