@@ -88,8 +88,8 @@ export default function Home() {
                 alt="Jackie D'Anna" 
                 className="w-full h-auto object-cover rounded-sm"
                 style={{ 
-                  maskImage: 'radial-gradient(circle at center, black 60%, transparent 100%), linear-gradient(to bottom, black 90%, transparent 100%)',
-                  WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 100%), linear-gradient(to bottom, black 90%, transparent 100%)',
+                  maskImage: 'radial-gradient(circle at center, black 65%, transparent 100%), linear-gradient(to bottom, black 95%, transparent 100%)',
+                  WebkitMaskImage: 'radial-gradient(circle at center, black 65%, transparent 100%), linear-gradient(to bottom, black 95%, transparent 100%)',
                   maskComposite: 'intersect',
                   WebkitMaskComposite: 'source-in'
                 }}
