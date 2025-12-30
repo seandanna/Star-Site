@@ -108,7 +108,12 @@ export default function Home() {
             </h2>
             <div className="space-y-4 text-gray-800 leading-relaxed font-light">
               <p>
-                Jackie D'Anna is an actor, writer, and producer with a diverse background in performance. She starred in <em>The Last Call Girl</em> at the Lee Strasberg Theater for the Short+Sweet Festival Hollywood 2022, reaching the semi-finalist round. Alongside her twin sister, she co-created sketch comedy and films under "Harvel Twinz", exploring mixed-race identity and the actor's life.
+                Jackie D'Anna is an <span className="font-medium text-orange-900">Afro-Latina actress</span> of <span className="font-medium text-orange-900">Mexican and Black heritage</span> based in <span className="font-medium text-orange-900">Los Angeles</span>. 
+                With a background in both dramatic intensity and sharp comedic timing, she brings a unique, multifaceted perspective to every role she inhabits.
+              </p>
+              <p>
+                As a performer who embraces her rich cultural background, Jackie is dedicated to authentic storytelling that resonates across diverse audiences. 
+                She starred in <em>The Last Call Girl</em> at the Lee Strasberg Theater for the Short+Sweet Festival Hollywood 2022, reaching the semi-finalist round. Alongside her twin sister, she co-created sketch comedy and films under "Harvel Twinz", exploring mixed-race identity and the actor's life.
               </p>
               <p>
                 With a screenwriting background from California State University, Northridge, Jackie wrote and starred in social media content for Vidy Pros. She has trained in the Chubbuck Technique and developed her improv skills at Leela Improv Theatre.
