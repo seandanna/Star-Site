@@ -60,15 +60,8 @@ export default function Reel() {
       </header>
 
       {/* Reel Section */}
-      <section className="py-20 md:py-32 px-4 md:px-6 mt-16">
+      <section className="py-20 md:py-32 px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
-          <motion.div
-            {...fadeIn}
-            className="text-center mb-16 md:mb-20"
-          >
-            <h1 className="font-serif text-4xl md:text-6xl mb-6 text-gray-900" data-testid="text-reel-title">Reel</h1>
-          </motion.div>
-
           <div className="space-y-16 md:space-y-24">
             {reels.map((reel, index) => (
               <motion.div

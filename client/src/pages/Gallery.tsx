@@ -86,15 +86,8 @@ export default function Gallery() {
       </header>
 
       {/* Gallery Section */}
-      <section className="py-20 md:py-32 px-4 md:px-6 mt-16">
+      <section className="py-20 md:py-32 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
-          <motion.div
-            {...fadeIn}
-            className="text-center mb-16 md:mb-20"
-          >
-            <h1 className="font-serif text-4xl md:text-6xl mb-6 text-gray-900" data-testid="text-gallery-title">Gallery</h1>
-          </motion.div>
-
           <motion.div
             variants={staggerContainer}
             initial="hidden"
