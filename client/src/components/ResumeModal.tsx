@@ -55,7 +55,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <div className="flex flex-col items-start justify-start">
                 <div className="mb-4 md:mb-6">
                   <a 
-                    href="https://www.imdb.com/name/nm10672151/" 
+                    href="https://www.imdb.com/name/nm6025384/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="border-2 border-gray-900 px-2 sm:px-3 py-1 inline-block hover:bg-gray-900 hover:text-white transition-all cursor-pointer"
