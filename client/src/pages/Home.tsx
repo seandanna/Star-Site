@@ -70,8 +70,8 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.2 }}
             className="text-center mb-8"
           >
-            <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl tracking-[0.2em] text-gray-900 leading-none uppercase font-bold drop-shadow-sm">
-              JACKIE<br/>D'ANNA
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl tracking-[0.2em] text-gray-900 leading-none uppercase font-bold drop-shadow-sm whitespace-nowrap">
+              JACKIE D'ANNA
             </h1>
           </motion.div>
 
@@ -81,15 +81,17 @@ export default function Home() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="relative w-full max-w-[800px]"
           >
-            {/* The Image with subtle fade-out effect at the very bottom */}
+            {/* The Image with subtle fade-out effect on all sides */}
             <div className="relative">
               <img 
                 src={heroImage} 
                 alt="Jackie D'Anna" 
                 className="w-full h-auto object-cover rounded-sm"
                 style={{ 
-                  maskImage: 'linear-gradient(to bottom, black 92%, transparent 100%)',
-                  WebkitMaskImage: 'linear-gradient(to bottom, black 92%, transparent 100%)'
+                  maskImage: 'radial-gradient(circle at center, black 60%, transparent 100%), linear-gradient(to bottom, black 90%, transparent 100%)',
+                  WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 100%), linear-gradient(to bottom, black 90%, transparent 100%)',
+                  maskComposite: 'intersect',
+                  WebkitMaskComposite: 'source-in'
                 }}
               />
             </div>
