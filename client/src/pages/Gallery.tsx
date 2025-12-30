@@ -41,9 +41,9 @@ const staggerContainer = {
 
 const galleryImages = [
   { src: img6, alt: "White shirt editorial" },
-  { src: img8, alt: "Black shirt professional" },
-  { src: img12, alt: "Red shirt powerful" },
   { src: img7, alt: "Expressive look" },
+  { src: img12, alt: "Red shirt powerful" },
+  { src: img8, alt: "Black shirt professional" },
   { src: img9, alt: "Direct gaze" },
   { src: img10, alt: "Casual beauty" },
   { src: img11, alt: "Radiant smile" },
