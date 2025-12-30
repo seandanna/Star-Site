@@ -49,23 +49,22 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 <p>Eye Color: Brown</p>
                 <p>Hair Color: Brown</p>
                 <p>Languages: English, Spanish</p>
-                <div className="pt-2">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-2">
-                    <div className="border border-gray-900 px-2 py-0.5">
-                      <span className="text-gray-900 font-bold text-[10px] sm:text-xs tracking-widest">IMDb</span>
-                    </div>
-                  </div>
-                  <a
-                    href="#"
-                    className="text-gray-900 underline hover:opacity-70 transition-opacity text-xs sm:text-sm md:text-base flex items-center gap-1 sm:gap-2"
-                  >
-                    📄 Download Resume
-                  </a>
-                </div>
               </div>
 
-              {/* Middle - Spacer/Reserved */}
-              <div className="hidden sm:block"></div>
+              {/* Middle - IMDb and Download */}
+              <div className="flex flex-col items-center justify-start">
+                <div className="flex items-center gap-2 sm:gap-3 mb-4 md:mb-6">
+                  <div className="border-2 border-gray-900 px-2 sm:px-3 py-1">
+                    <span className="text-gray-900 font-bold text-xs sm:text-sm tracking-widest">IMDb</span>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  className="text-gray-900 underline hover:opacity-70 transition-opacity text-xs sm:text-sm md:text-base flex items-center gap-1 sm:gap-2"
+                >
+                  📄 Download Resume
+                </a>
+              </div>
 
               {/* Right - In the Media */}
               <div>
