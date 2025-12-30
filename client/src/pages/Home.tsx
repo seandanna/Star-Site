@@ -65,56 +65,33 @@ export default function Home() {
         
         <div className="relative z-20 w-full max-w-5xl px-4 flex flex-col items-center">
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-center mb-8"
+          >
+            <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl tracking-[0.2em] text-gray-900 leading-none uppercase font-bold drop-shadow-sm">
+              JACKIE<br/>D'ANNA
+            </h1>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative w-full max-w-[800px] group"
+            className="relative w-full max-w-[800px]"
           >
-            {/* The Image with fade-out effect */}
+            {/* The Image with subtle fade-out effect at the very bottom */}
             <div className="relative">
               <img 
                 src={heroImage} 
                 alt="Jackie D'Anna" 
-                className="w-full h-auto object-cover rounded-sm mask-image-fade"
+                className="w-full h-auto object-cover rounded-sm"
                 style={{ 
-                  maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-                  WebkitMaskImage: 'linear-gradient(to bottom, black 80%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-                  maskComposite: 'intersect',
-                  WebkitMaskComposite: 'source-in'
+                  maskImage: 'linear-gradient(to bottom, black 92%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, black 92%, transparent 100%)'
                 }}
               />
-              
-              {/* Name Overlay - Centered and Bold like the reference */}
-              <div className="absolute inset-0 flex flex-col items-center justify-start pt-12 pointer-events-none">
-                <motion.h1 
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  className="font-serif text-5xl sm:text-7xl md:text-8xl tracking-[0.2em] text-white drop-shadow-2xl text-center leading-none uppercase font-bold"
-                >
-                  JACKIE<br/>D'ANNA
-                </motion.h1>
-              </div>
-
-              {/* Taglines on the sides - mimic "The Actor" / "The Photographer" */}
-              <div className="absolute inset-0 flex items-center justify-between px-4 md:px-0 pointer-events-none opacity-60">
-                <motion.span 
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 1, duration: 1 }}
-                  className="hidden md:block font-serif italic text-xl text-gray-700 tracking-widest -translate-x-12"
-                >
-                  The Actor
-                </motion.span>
-                <motion.span 
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 1, duration: 1 }}
-                  className="hidden md:block font-serif italic text-xl text-gray-700 tracking-widest translate-x-12"
-                >
-                  The Creator
-                </motion.span>
-              </div>
             </div>
           </motion.div>
         </div>
@@ -122,7 +99,7 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 2, duration: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce cursor-pointer"
           onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
         >
