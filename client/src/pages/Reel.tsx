@@ -60,9 +60,9 @@ export default function Reel() {
       </header>
 
       {/* Reel Section */}
-      <section className="py-20 md:py-32 px-4 md:px-6">
+      <section className="py-12 md:py-20 px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-12 md:space-y-16">
             {reels.map((reel, index) => (
               <motion.div
                 key={index}

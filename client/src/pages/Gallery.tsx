@@ -86,7 +86,7 @@ export default function Gallery() {
       </header>
 
       {/* Gallery Section */}
-      <section className="py-20 md:py-32 px-4 md:px-6">
+      <section className="py-12 md:py-20 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div
             variants={staggerContainer}

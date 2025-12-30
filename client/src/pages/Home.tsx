@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 md:py-32 px-4 md:px-12 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 relative z-10">
+      <section id="about" className="py-12 md:py-24 px-4 md:px-12 bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 relative z-10">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <motion.div 
             {...fadeIn}
