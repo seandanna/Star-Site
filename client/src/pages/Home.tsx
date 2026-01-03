@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-b from-amber-50 via-orange-50 to-amber-50 text-foreground overflow-x-hidden">
       {/* Navigation Header - Fixed */}
-      <header className="fixed top-0 left-0 right-0 w-full bg-white/60 backdrop-blur-xl border-b border-white/20 py-4 md:py-6 z-50 transition-all duration-300 shadow-sm">
+      <header className="fixed top-0 left-0 right-0 w-full bg-white/60 backdrop-blur-xl py-4 md:py-6 z-50 transition-all duration-300 shadow-sm shadow-black/5">
         <nav className="flex justify-center items-center">
           <div className="flex gap-4 md:gap-8 font-bold tracking-widest text-[10px] md:text-xs items-center text-gray-900">
             <a href="#" className="hover:text-primary transition-colors">Home</a>
